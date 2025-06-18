@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Swara Gharat | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root{
+      --primary:#8b5cf6;
+      --accent:#38bdf8;
+      --background:#0f0f1a;
+      --card:#1a1a2e;
+      --text:#e0e0e0;
+      --muted:#a0a0b2
+    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+    body{background:var(--background);color:var(--text)}
+    header{
+      background:var(--card);
+      box-shadow:0 4px 12px rgba(0,0,0,.6);
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+      animation:slideInDown .7s ease
+    }
+    @keyframes slideInDown{0%{transform:translateY(-100%);opacity:0}100%{transform:translateY(0);opacity:1}}
+    header h1{color:var(--primary);font-size:28px}
+    nav a{
+      margin-left:24px;
+      color:var(--text);
+      text-decoration:none;
+      font-weight:500;
+      position:relative
+    }
+    nav a::after{
+      content:'';
+      height:2px;
+      width:0;
+      background:var(--accent);
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      transition:width .3s ease
+    }
+    nav a:hover::after{width:100%}
+    section{max-width:960px;margin:60px auto;padding:0 20px}
+    .hero{text-align:center;animation:fadeIn 1.2s ease-in}
+    .hero-img img{
+      width:180px;
+      border-radius:50%;
+      margin-bottom:20px;
+      border:5px solid var(--primary);
+      object-fit:cover
+    }
+    .hero h2{font-size:42px;font-weight:700;margin-bottom:10px;color:var(--text)}
+    .hero h2 span{color:var(--primary)}
+    .hero p{font-size:20px;color:var(--muted);margin-bottom:20px}
+    .social-icons{margin-top:15px}
+    .social-icons a{
+      margin:0 10px;
+      font-size:22px;
+      color:var(--accent);
+      transition:transform .3s
+    }
+    .social-icons a:hover{transform:scale(1.2)}
+    h2{color:var(--primary);font-size:30px;margin-bottom:20px}
+    section p,section li{font-size:17px;line-height:1.7;color:var(--muted)}
+    ul{padding-left:20px}
+    #contact{text-align:center}
+    .btn{
+      background:var(--accent);
+      color:#000;
+      padding:12px 24px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:background .3s
+    }
+    .btn:hover{background:#0ea5e9}
+    footer{
+      text-align:center;
+      padding:40px 20px 20px;
+      background:var(--card);
+      color:var(--muted);
+      font-size:14px;
+      margin-top:60px
+    }
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-laptop-code"></i> Swara Gharat</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#career">Career</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-img">
+      <img src="D:\USER DATA\Desktop\1735878606048.jpg" alt="Swara Avatar" />
+    </div>
+    <h2>Hello, I'm <span>Swara Gharat</span></h2>
+    <p>Front-End Developer passionate about interactive experiences and clean design.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/swara-gharat-b6a566344" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/swaragharatt" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section id="career">
+    <h2>Career Objective</h2>
+    <p>Aspiring data science professional with strong foundations in programming and analytics. Passionate about building impactful digital products and growing through real-world experiences.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Techithon 2024:</strong> IoT Trash Bot with CNN recognition & autonomous sorting</li>
+      <li><strong>Smart Blind Stick:</strong> Navigation aid using sensors, GPS & haptics</li>
+      <li><strong>Number Guessing Game:</strong> Python CLI project for logic and engagement</li>
+      <li><strong>Turtle Graphics:</strong> Geometric art using Python Turtle</li>
+      <li><strong>Arduino Workshop:</strong> LED & buzzer sync with basic coding principles</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Languages:</strong> Python, C++, HTML, CSS<br><strong>Tools:</strong> Power BI, Tableau, Figma, Excel, Canva<br><strong>Soft Skills:</strong> Leadership, Critical Thinking, Data Interpretation</p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email me at <a href="mailto:swara37ds@gmail.com" style="color:var(--accent)">swara37ds@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <a class="btn" href="https://docs.google.com/document/d/1mTUyVaPCBU2f_OVfOeQdmvfKpMlBxlRs/edit" target="_blank">View&nbsp;Resume</a>
+    <p style="margin-top:20px">&copy; 2025 Swara Gharat. Designed with creativity and code.</p>
+  </footer>
+</body>
+</html>
